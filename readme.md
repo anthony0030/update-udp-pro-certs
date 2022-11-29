@@ -10,14 +10,26 @@ This script is designed to Installs Certificates on a UniFi UDM-PRO
 2) You already have your certificates generated for your domain name
 3) Required dependencies (ssh, scp)
 
-## **How To use**
+## **How To Use**
 
-Place you certificate in the input directory, They need to be named exactly:
+0. Make script executable
+```console chmod u+x update-certs.sh```
 
+1. Place you certificate in the input directory, They need to be named exactly:
 root.crt
 intermediate.crt
 main.crt
 private.key
+
+2. Edit the script to reflect your consoles ip
+
+3. run the script in the terminal
+```console foo@bar:~$ sh update-certs.sh```
+
+4. Check that everyting is working.
+
+
+## What is each file
 
 ### **root.crt**
 
@@ -34,9 +46,3 @@ This is the main certificate for example `*.google.com` OR `lencr.org`
 ### **private.key**
 
 This is your private key that was used during the CSR to create the main certificate
-
-run the script in the terminal
-
-```console
-  foo@bar:~$ sh update-certs.sh
-```
