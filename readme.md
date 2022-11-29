@@ -13,7 +13,7 @@ This script is designed to Installs Certificates on a UniFi UDM-PRO
 ## **How To Use**
 
 0. Make script executable
-```console chmod u+x update-certs.sh```
+```chmod u+x update-certs.sh```
 
 1. Place you certificate in the input directory, They need to be named exactly:
 root.crt
@@ -24,10 +24,9 @@ private.key
 2. Edit the script to reflect your consoles ip
 
 3. run the script in the terminal
-```console foo@bar:~$ sh update-certs.sh```
+```foo@bar:~$ sh update-certs.sh```
 
 4. Check that everyting is working.
-
 
 ## What is each file
 
