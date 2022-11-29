@@ -1,0 +1,10 @@
+#? Input Files
+/input/*
+!/input/.keep
+
+#? Output Files
+/output/*
+!/output/.keep
+
+#? System Files
+.DS_Store
